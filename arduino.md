@@ -1,19 +1,20 @@
 # Arduino
 
+
 ## Visão geral
 
 _Arduino_ é uma plataforma de prototipagem eletrônica, criada em 2005 por um grupo de 5 pesquisadores : Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis.  
 Ela usa do conceito de hardware livre, o que significa que qualquer um está livre a estudar a arquitetura do hardware (as placas de prototipagem e seus componentes) e reproduzir, contanto que não faça uso da marca registrada Arduino.  
 
-As placas de prototipação possuem diversos componentes, como os **pinos** de entrada/saída Digitais e Analógicos, **portas** e interfaces (USB-B, micro-USB), um **microcontrolador** Atmel (ATmega8, ATmega328, ATmega1280), um **cristal oscilador** para realizar as funções do sistema em sincronia com por meio dos "clocks" além de suporte a uma linguagem de programação padrão, uma modificação baseada em C/C++ com bibliotecas e funções próprias.  
+As placas de prototipação possuem diversos componentes, como os **pinos** de entrada/saída Digitais e Analógicos, **portas** e interfaces (USB-B, micro-USB, Fonte de Tensão), um **microcontrolador** Atmel (ATmega8, ATmega328, ATmega1280), um **cristal oscilador** para realizar as funções do sistema em sincronia com por meio dos "clocks" além de suporte a uma linguagem de programação padrão, uma modificação baseada em C/C++ com bibliotecas e funções próprias.  
 Além das placas, a plataforma possui projetos opensource, bibliotecas, interfaces para sensores e softwares como o Arduino IDE para o desenvolvimento de programas para as placas de prototipagem.  
 
 O que torna o Arduino tão especial é sua acessibilidade, uma vez é possível realizar diversos projetos usando componentes, circuitos integrados e sensores amplamente aplicáveis rotineiramente a um baixo cursto em comparação com outras plataformas e tecnologias.  
 
+
 ## Modelos
 
 Dentre os diversos modelos de placas, os mais conhecidos são:
-
 
 * Arduino Uno  
 * Arduino Uno R3  
@@ -23,18 +24,34 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 * Arduino Nano  
 * Arduino Mini  
 
+
 ## Arquitetura
 
 ###### Arduino Uno:  
+
 ![exemplo](https://d3b8hk1o42ev08.cloudfront.net/wp-content/uploads/2018/05/arduino-2168193_960_720.png)  
 
 ###### Arquitetura:  
+
 ![pinagem e entradas](https://www.electrofun.pt/blog/wp-content/uploads/2018/04/pinagem.png)  
 
+![arduino pinout](http://4.bp.blogspot.com/-XLwbtKbSaYo/UdPD7RHMEGI/AAAAAAAAABg/mtylLXdbIWY/s961/ARDUINO_V2.png)  
+
 ###### Modelos:  
+
 ![modelos de arduino](https://electropeak.com/learn/wp-content/uploads/2019/08/Arduino-Buying-Guide-Arduino-Dimensions.jpg)  
 
-## Exemplo de Código:
+
+### Diferença entre Microcontrolador e Microprocessador
+
+* Microprocessador - conjunto de componentes [ chipset, processador(es), memórias RAM, memória ROM, unidades de armazenamento ] que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema  
+* Microcontrolador - chip unitário que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores  
+
+Comparando arquiteturas:  
+![Arduino v.s. Raspberry Pi](https://media-ecn.s3.amazonaws.com/embedded_image/2017/12/171211-%20Arduino%20Vs%20Raspberry%20Pi.jpg)  
+
+
+## Exemplo de Código (Acender LEDs RGB em sequência):
 
 ```
 int counter;
@@ -65,13 +82,25 @@ void loop()
 }
 ```
 
+
 ### Referências e Links Úteis
 
+Sobre:  
 https://pt.wikipedia.org/wiki/Arduino  
 https://www.filipeflop.com/blog/o-que-e-arduino/  
+
+Arduino Datasheet:  
+https://datasheet.octopart.com/A000066-Arduino-datasheet-38879526.pdf  
+https://static.rapidonline.com/pdf/73-4443.pdf  
+https://www.farnell.com/datasheets/1682209.pdf  
+
+Arduino Tutoriais e Documentação:  
 https://www.arduino.cc/en/Tutorial/HomePage  
 https://www.arduino.cc/reference/en/  
 https://playground.arduino.cc/  
+https://www.arduino.cc/en/Main/Create  
+
+PlataforIO:  
 https://www.embarcados.com.br/arduino-vscode-platformio/  
 
 
