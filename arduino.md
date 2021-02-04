@@ -44,12 +44,16 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 
 ### Diferença entre Microcontrolador e Microprocessador
 
-* Microprocessador - conjunto de componentes [ chipset, processador(es), memórias RAM, memória ROM, unidades de armazenamento ] que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema  
-* Microcontrolador - chip unitário que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores  
+* Microprocessador - conjunto de componentes [ unidades lógica, aritmética, unidade de controle, com diversos registradores de memória além das entradas e saídas ] que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema  
+* Microcontrolador - chip único que realiza todas as funções dos componentes do microprocessador [ chip All-in-One ] que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores  
+
+Ambas as placas possuem chipset, processador(es), memórias RAM, memória ROM, EEPROM, memória Flash, unidades de armazenamento (dado o tamanho e as interfaces mais simples das placas, o mais comum é o MicroSD)...  
 
 Comparando arquiteturas:  
 ![Arduino v.s. Raspberry Pi](https://media-ecn.s3.amazonaws.com/embedded_image/2017/12/171211-%20Arduino%20Vs%20Raspberry%20Pi.jpg)  
 
+_Arduino Duemilanove (2009, em italiano), que possui um clock de 16MHz, 2kB de memória RAM, 32kB de memória flash, 14 portas digitais e 6 entradas analógicas._  
+_Raspberry Pi 1 Model B+, com um processador Broadcom de núcleo único e 700 MHz, 512 MB de memória RAM padrão DDR2, 40 pinos, quatro portas USB 2.0, saída HDMI, slot para microSD, baixo consumo de energia (entre 0,5 e 1 watt), interface de conexão Ethernet, interface para câmera e tela, além de saída de som P2._  
 
 ## Exemplo de Código (Acender LEDs RGB em sequência):
 
