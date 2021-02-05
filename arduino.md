@@ -112,7 +112,6 @@ Exemplos das Bibliotecas: https://www.arduino.cc/en/Tutorial/LibraryExamples
 Referências de Funções built-in: https://www.arduino.cc/reference/en/  
 Conhecimentos Aprofundados: https://www.arduino.cc/en/Hacking/HomePage  
 Users Playground: https://playground.arduino.cc/  
-https://www.arduino.cc/en/Main/Create  
 Projetos: https://create.arduino.cc/projecthub  
 
 PlataforIO:  
