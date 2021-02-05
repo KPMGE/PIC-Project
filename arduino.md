@@ -104,10 +104,16 @@ https://static.rapidonline.com/pdf/73-4443.pdf
 https://www.farnell.com/datasheets/1682209.pdf  
 
 Arduino Tutoriais e Documentação:  
-https://www.arduino.cc/en/Tutorial/HomePage  
-https://www.arduino.cc/reference/en/  
-https://playground.arduino.cc/  
+
+Hardware - Modelos, Especificações, Esquemáticos, Documentação e Datasheet dos componentes: https://www.arduino.cc/en/Main/Products  
+Fundamentos: https://www.arduino.cc/en/Tutorial/Foundations  
+Tutoriais e Guias: https://www.arduino.cc/en/Tutorial/BuiltInExamples  
+Exemplos das Bibliotecas: https://www.arduino.cc/en/Tutorial/LibraryExamples  
+Referências de Funções built-in: https://www.arduino.cc/reference/en/  
+Conhecimentos Aprofundados: https://www.arduino.cc/en/Hacking/HomePage  
+Users Playground: https://playground.arduino.cc/  
 https://www.arduino.cc/en/Main/Create  
+Projetos: https://create.arduino.cc/projecthub  
 
 PlataforIO:  
 https://www.embarcados.com.br/arduino-vscode-platformio/  
