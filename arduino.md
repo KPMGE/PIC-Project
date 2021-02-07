@@ -95,26 +95,25 @@ void loop()
 ### Referências e Links Úteis
 
 Sobre:  
-https://pt.wikipedia.org/wiki/Arduino  
-https://www.filipeflop.com/blog/o-que-e-arduino/  
+[wikipedia](https://pt.wikipedia.org/wiki/Arduino)  
+[filipeflop](https://www.filipeflop.com/blog/o-que-e-arduino/)  
 
 Arduino Datasheet:  
-https://datasheet.octopart.com/A000066-Arduino-datasheet-38879526.pdf  
-https://static.rapidonline.com/pdf/73-4443.pdf  
-https://www.farnell.com/datasheets/1682209.pdf  
+[datasheet.octopart.com](https://datasheet.octopart.com/A000066-Arduino-datasheet-38879526.pdf)  
+[static.rapidonline.com](https://static.rapidonline.com/pdf/73-4443.pdf)  
+[farnell.com](https://www.farnell.com/datasheets/1682209.pdf)  
 
 Arduino Tutoriais e Documentação:  
 
-Hardware - Modelos, Especificações, Esquemáticos, Documentação e Datasheet dos componentes: https://www.arduino.cc/en/Main/Products  
-Fundamentos: https://www.arduino.cc/en/Tutorial/Foundations  
-Tutoriais e Guias: https://www.arduino.cc/en/Tutorial/BuiltInExamples  
-Exemplos das Bibliotecas: https://www.arduino.cc/en/Tutorial/LibraryExamples  
-Referências de Funções built-in: https://www.arduino.cc/reference/en/  
-Conhecimentos Aprofundados: https://www.arduino.cc/en/Hacking/HomePage  
-Users Playground: https://playground.arduino.cc/  
-Projetos: https://create.arduino.cc/projecthub  
+Hardware - Modelos, Especificações, Esquemáticos, Documentação e Datasheets dos componentes: [clique aqui](https://www.arduino.cc/en/Main/Products)  
+Fundamentos: [clique aqui](https://www.arduino.cc/en/Tutorial/Foundations)  
+Tutoriais e Guias: [clique aqui](https://www.arduino.cc/en/Tutorial/BuiltInExamples)  
+Exemplos das Bibliotecas: [clique aqui](https://www.arduino.cc/en/Tutorial/LibraryExamples)  
+Referências de Funções built-in: [clique aqui](https://www.arduino.cc/reference/en/)  
+Conhecimentos Aprofundados: [clique aqui](https://www.arduino.cc/en/Hacking/HomePage)  
+Users Playground: [clique aqui](https://playground.arduino.cc/)  
+Projetos: [clique aqui](https://create.arduino.cc/projecthub)  
 
-PlataforIO:  
-https://www.embarcados.com.br/arduino-vscode-platformio/  
+PlataforIO (para o VSCode): [clique aqui](https://www.embarcados.com.br/arduino-vscode-platformio/)  
 
 
