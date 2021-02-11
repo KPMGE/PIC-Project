@@ -29,14 +29,14 @@ Além disso, no arduíno há ainda outra conversão: O arduíno não trabalha co
 ### Sensor de umidade 
 O sensor de umidade é um importante sensor pois com ele podemos realizar projetos de automação embasados na umidade de algo, como a terra de um vaso por exemplo
 
-![Imagem sensor](images-sensors/sensor-umidade.jpg)
+<img src="images-sensors/sensor-umidade.jpg" alt="image" height="500px" width="700px">
 
 </br>
 
 #### Projeto regador automático
 um exemplo de projeto realizado com este sensor é um regador automático de plantas. Aqui, o sensor é usado junto com o arduíno para verificar a umidade da terra em que está uma planta. Se a umidade ficar muito baixa, regamos a planta automaticamente
 
-![Imagem vaso](images-sensors/vaso.png)
+<img src="images-sensors/irrigador.jpg" alt="image" height="500px" width="700px">
 
 
 </br>
@@ -47,9 +47,32 @@ um exemplo de projeto realizado com este sensor é um regador automático de pla
 O sensor de distância é um dos sensores mais versáteis que temos no arduíno. Há uma quantidade enorme de projetos que podemos fazer usando-os.
 Os sensores mais comuns e baratos conseguem fazer detecções a até cerca de 1 metro de distância, mas há outros sensores muito mais potentes que podem ser usados
 
-![Imagem sensor](images-sensors/sensor-distancia.jpeg)
+<img src="images-sensors/sensor-distancia.jpeg" alt="image" height="500px" width="700px">
 
 #### Projeto carrinho que não se choca com as paredes
 Um ótimo exemplo do uso deste sensor é visto no projeto de um carrinho que não se choca contra as paredes. Para fazer isso, usamos o sensor de distância para prevenir o carrinho de se aproximar de mais, e consequente bater, na parede.
 
-![Imagem sensor](images-sensors/carro.jpg)
+</br>
+
+<img src="images-sensors/carro.jpg" alt="image" height="500px" width="700px">
+
+
+</br>
+</br>
+</br>
+
+### Sensor de fluxo de água
+Um sensor de fluxo de água é muito importante e fornece diversas opções de projetos,</br>
+ principalmente quando queremos interromper a passagem de um determinado liquido depois que passou um determinadoro volume de um certo liquido
+
+<!-- ![imagaem sensor](images-sensors/sensor-fluxo-agua.jpg) -->
+<img src="images-sensors/sensor-fluxo-agua.jpg" alt="image" height="500px" width="700px">
+
+</br>
+
+#### Projeto ecomia de água
+Um exemplo de projeto muito interessante e sustentável é um medidor de consumo de água, onde o usuário consegue monitorar </>
+seu consumo de água e definir metas de consumo, de modo que se esse valor for extrapolado, o usário seja notificado. Deste modo, </br>
+o usuário se conscientiza mais do seu uso abusivo e pode mitiga-lo.
+
+<img src="images-sensors/fluxo-de-agua.png" alt="image" height="500px" width="700px">
