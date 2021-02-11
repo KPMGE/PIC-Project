@@ -21,5 +21,12 @@ O sensor de umidade é um importante sensor pois com ele podemos realizar projet
 
 ![Imagem sensor](images-sensors/sensor-umidade.jpg)
 
+um exemplo de projeto realizado com este sensor é um regador automático de plantas. Aqui, o sensor é usado junto com o arduíno para verificar a umidade da terra em que está uma planta. Se a umidade ficar muito baixa, regamos a planta automaticamente
+
+![Imagem vaso](images-sensors/vaso.png)
+
+
+</br>
+</br>
 
 
