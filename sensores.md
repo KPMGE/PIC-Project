@@ -19,7 +19,7 @@ O arduino possui diversos sensores os quais são usados em diversos projetos com
 ### Sensor de umidade 
 O sensor de umidade é um importante sensor pois com ele podemos realizar projetos de automação embasados na umidade de algo, como a terra de um vaso por exemplo
 
-![Imagem sensor]("images-sensors/sensor-umidade.jpg")
+![Imagem sensor](images-sensors/sensor-umidade.jpg)
 
 
 
