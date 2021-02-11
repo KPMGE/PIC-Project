@@ -4,7 +4,7 @@ O arduino possui diversos sensores os quais são usados em diversos projetos com
 
 </br>
 
-#### **Sensores  Abordados e componentes abordados**
+#### **Sensores e componentes abordados**
 
 * Sensor de umidade
 * Sensor de distância
