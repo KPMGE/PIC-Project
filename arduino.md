@@ -111,7 +111,7 @@ void loop()
 
 <div align="center">
 
-<img src="./img/tinkercad.png" alt="pisca-pisca" height="680px" width="900px">  
+<img src="./img/tinkercad.png" alt="pisca-pisca" height="auto" width="auto">  
 
 </div>
 
@@ -186,12 +186,7 @@ void loop()
 
 <div align="center">
 
-<img src="./img/proxim1.png" alt="proxim1" height="auto" width="auto">  
-</br>
-<img src="./img/proxim2.png" alt="proxim2" height="auto" width="auto">  
-</br>
-<img src="./img/proxim3.png" alt="proxim3" height="auto" width="auto">  
-</br>
+![sensor proximidade](./img/proxim.gif)  
 
 </div>
 
