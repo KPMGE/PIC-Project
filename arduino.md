@@ -29,33 +29,46 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 
 ###### Arduino Uno:  
 
-![exemplo](https://d3b8hk1o42ev08.cloudfront.net/wp-content/uploads/2018/05/arduino-2168193_960_720.png)  
+![exemplo](./img/arduino-2168193_960_720.png)  
+
+</br>
 
 ###### Arquitetura:  
 
-![pinagem e entradas](https://www.electrofun.pt/blog/wp-content/uploads/2018/04/pinagem.png)  
+![pinagem e entradas](./img/pinagem.png)  
 
-![arduino pinout](http://4.bp.blogspot.com/-XLwbtKbSaYo/UdPD7RHMEGI/AAAAAAAAABg/mtylLXdbIWY/s961/ARDUINO_V2.png)  
+</br>
+
+###### Pinagem:  
+
+![arduino pinout](./img/ARDUINO_V2.png)  
+
+</br>
 
 ###### Modelos:  
 
-![modelos de arduino](https://electropeak.com/learn/wp-content/uploads/2019/08/Arduino-Buying-Guide-Arduino-Dimensions.jpg)  
+![modelos de arduino](./img/Arduino-Buying-Guide-Arduino-Dimensions.jpg)  
 
+</br>
 
 ### Diferença entre Microcontrolador e Microprocessador
 
 * Microprocessador - conjunto de componentes [ unidades lógica, aritmética, unidade de controle, com diversos registradores de memória além das entradas e saídas ] que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema  
 * Microcontrolador - chip único que realiza todas as funções dos componentes do microprocessador [ chip All-in-One ] que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores  
 
-Ambas as placas possuem chipset, processador(es), memórias RAM, memória ROM, EEPROM, memória Flash, unidades de armazenamento (dado o tamanho e as interfaces mais simples das placas, o mais comum é o MicroSD)...  
+Ambas as placas possuem chipset, processador com 1 ou mais núcleos, memórias RAM, memória ROM, EEPROM, memória Flash, unidades de armazenamento (dado o tamanho e as interfaces mais simples das placas, o mais comum é o MicroSD)...  
 
 Comparando arquiteturas:  
-![Arduino v.s. Raspberry Pi](https://media-ecn.s3.amazonaws.com/embedded_image/2017/12/171211-%20Arduino%20Vs%20Raspberry%20Pi.jpg)  
+</br>
+
+![Arduino v.s. Raspberry Pi](./img/171211-Arduino_Vs_Raspberry_Pi.jpg)  
 
 _Arduino Duemilanove (2009, em italiano), que possui um clock de 16MHz, 2kB de memória RAM, 32kB de memória flash, 14 portas digitais e 6 entradas analógicas._  
 _Raspberry Pi 1 Model B+, com um processador Broadcom de núcleo único e 700 MHz, 512 MB de memória RAM padrão DDR2, 40 pinos, quatro portas USB 2.0, saída HDMI, slot para microSD, baixo consumo de energia (entre 0,5 e 1 watt), interface de conexão Ethernet, interface para câmera e tela, além de saída de som P2._  
 
-## Exemplo de Código (Acender LEDs RGB em sequência):
+## Exemplos de Código:
+
+###### Acender LEDs RGB em sequência
 
 ```
 int counter;
@@ -89,8 +102,85 @@ void loop()
 }
 ```
 
-![pisca-pisca](./img/tinkercad.png)  
+<img src="./img/tinkercad.png" alt="pisca-pisca" height="550px" width="700px">  
 
+</br>
+
+###### Sensor de Distância Ultrassônico
+
+```
+#define SIGNAL A0
+#define RED 6
+#define GREEN 5
+#define BLUE 3 // constantes com os identificadores dos pinos
+
+int distancia = 0;
+
+long lerDistanciaUltrassonica(int pinoAcionador, int pinoEco)
+{
+	pinMode(pinoAcionador, OUTPUT); // limpar o acionador o deixando em LOW
+	digitalWrite(pinoAcionador, LOW);
+	delayMicroseconds(2);
+
+	// deixar o acionador em HIGH por 10 microsegundos
+	digitalWrite(pinoAcionador, HIGH);
+	delayMicroseconds(10);
+	digitalWrite(pinoAcionador, LOW);
+
+	// ler o pino de eco e retornar o tempo de viagem da onda sonora em microsegundos
+	pinMode(pinoEco, INPUT);
+	return pulseIn(pinoEco, HIGH);
+}
+
+void setup()
+{
+	Serial.begin(9600); // iniciar troca de dados com o monitor serial a 9600 baunds
+	pinMode(RED, OUTPUT); // definir pinos dos leds como saida
+	pinMode(GREEN, OUTPUT);
+	pinMode(BLUE, OUTPUT);
+}
+
+void loop()
+{
+	distancia = 0.01723 * lerDistanciaUltrassonica(SIGNAL, SIGNAL); // conversao de tempo de viagem recebido do eco para 'cm'
+
+	Serial.print("Proximidade: ");
+	Serial.print(distancia);
+	Serial.println("cm");
+	
+	if (distancia <= 85)
+	{
+		digitalWrite(GREEN, LOW);
+		digitalWrite(BLUE, LOW);
+		digitalWrite(RED, HIGH);
+	}
+	else if (distancia > 85 && distancia <= 170)
+	{
+		digitalWrite(RED, LOW);
+		digitalWrite(BLUE, LOW);
+		digitalWrite(GREEN, HIGH);
+	}
+	else // distancia > 170
+	{
+		digitalWrite(RED, LOW);
+		digitalWrite(GREEN, LOW);
+		digitalWrite(BLUE, HIGH);
+	}
+
+	delay(10); // Delay para evitar alto custo de processamento
+}
+
+
+```
+
+<img src="./img/proxim1.png" alt="proxim1" height="550px" width="700px">  
+</br>
+<img src="./img/proxim2.png" alt="proxim2" height="550px" width="700px">  
+</br>
+<img src="./img/proxim3.png" alt="proxim3" height="550px" width="700px">  
+</br>
+
+</br>
 
 ### Referências e Links Úteis
 
@@ -103,7 +193,7 @@ Arduino Datasheet:
 [static.rapidonline.com](https://static.rapidonline.com/pdf/73-4443.pdf)  
 [farnell.com](https://www.farnell.com/datasheets/1682209.pdf)  
 
-Arduino Tutoriais e Documentação:  
+Arduino - Tutoriais e Documentação:  
 
 Hardware - Modelos, Especificações, Esquemáticos, Documentação e Datasheets dos componentes: [clique aqui](https://www.arduino.cc/en/Main/Products)  
 Fundamentos: [clique aqui](https://www.arduino.cc/en/Tutorial/Foundations)  
@@ -115,5 +205,5 @@ Users Playground: [clique aqui](https://playground.arduino.cc/)
 Projetos: [clique aqui](https://create.arduino.cc/projecthub)  
 
 PlataforIO (para o VSCode): [clique aqui](https://www.embarcados.com.br/arduino-vscode-platformio/)  
-
+</br>
 
