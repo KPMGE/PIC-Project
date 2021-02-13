@@ -27,6 +27,8 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 
 ## Arquitetura
 
+<div align="center">
+
 ###### Arduino Uno:  
 
 ![exemplo](./img/arduino-2168193_960_720.png)  
@@ -50,6 +52,7 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 ![modelos de arduino](./img/Arduino-Buying-Guide-Arduino-Dimensions.jpg)  
 
 </br>
+</div>
 
 ### Diferença entre Microcontrolador e Microprocessador
 
@@ -61,7 +64,11 @@ Ambas as placas possuem chipset, processador com 1 ou mais núcleos, memórias R
 Comparando arquiteturas:  
 </br>
 
+<div align="center">
+
 ![Arduino v.s. Raspberry Pi](./img/171211-Arduino_Vs_Raspberry_Pi.jpg)  
+
+</div>
 
 _Arduino Duemilanove (2009, em italiano), que possui um clock de 16MHz, 2kB de memória RAM, 32kB de memória flash, 14 portas digitais e 6 entradas analógicas._  
 _Raspberry Pi 1 Model B+, com um processador Broadcom de núcleo único e 700 MHz, 512 MB de memória RAM padrão DDR2, 40 pinos, quatro portas USB 2.0, saída HDMI, slot para microSD, baixo consumo de energia (entre 0,5 e 1 watt), interface de conexão Ethernet, interface para câmera e tela, além de saída de som P2._  
@@ -102,7 +109,11 @@ void loop()
 }
 ```
 
-<img src="./img/tinkercad.png" alt="pisca-pisca" height="550px" width="700px">  
+<div align="center">
+
+<img src="./img/tinkercad.png" alt="pisca-pisca" height="680px" width="900px">  
+
+</div>
 
 </br>
 
@@ -173,12 +184,16 @@ void loop()
 
 ```
 
-<img src="./img/proxim1.png" alt="proxim1" height="550px" width="700px">  
+<div align="center">
+
+<img src="./img/proxim1.png" alt="proxim1" height="auto" width="auto">  
 </br>
-<img src="./img/proxim2.png" alt="proxim2" height="550px" width="700px">  
+<img src="./img/proxim2.png" alt="proxim2" height="auto" width="auto">  
 </br>
-<img src="./img/proxim3.png" alt="proxim3" height="550px" width="700px">  
+<img src="./img/proxim3.png" alt="proxim3" height="auto" width="auto">  
 </br>
+
+</div>
 
 </br>
 
