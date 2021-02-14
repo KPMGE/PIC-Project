@@ -61,15 +61,15 @@ Um ótimo exemplo do uso deste sensor é visto no projeto de um carrinho que nã
 
 ### Sensor de fluxo de água
 Um sensor de fluxo de água é muito importante e fornece diversas opções de projetos,</br>
- principalmente quando queremos interromper a passagem de um determinado liquido depois que passou um determinadoro volume de um certo liquido
+ principalmente quando queremos interromper a passagem de um determinado liquido depois que passou um determinadoro volume do mesmo
 
 <!-- ![imagaem sensor](images-sensors/sensor-fluxo-agua.jpg) -->
 <img src="images-sensors/sensor-fluxo-agua.jpg" alt="image" height="550px" width="700px">
 
 </br>
 
-#### Projeto ecomia de água
-Um exemplo de projeto muito interessante e sustentável é um medidor de consumo de água, onde o usuário consegue monitorar </>
+#### Projeto economia de água
+Um exemplo de projeto muito interessante e sustentável é um medidor de consumo de água, onde o usuário consegue monitorar 
 seu consumo de água e definir metas de consumo, de modo que se esse valor for extrapolado, o usário seja notificado. Deste modo, </br>
 o usuário se conscientiza mais do seu uso abusivo e pode mitiga-lo.
 
