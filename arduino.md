@@ -6,23 +6,10 @@
 _Arduino_ é uma plataforma de prototipagem eletrônica, criada em 2005 por um grupo de 5 pesquisadores : Massimo Banzi, David Cuartielles, Tom Igoe, Gianluca Martino e David Mellis.  
 Ela usa do conceito de hardware livre, o que significa que qualquer um está livre a estudar a arquitetura do hardware (as placas de prototipagem e seus componentes) e reproduzir, contanto que não faça uso da marca registrada Arduino.  
 
-As placas de prototipação possuem diversos componentes, como os **pinos** de entrada/saída Digitais e Analógicos, **portas** e interfaces (USB-B, micro-USB, Fonte de Tensão), um **microcontrolador** Atmel (ATmega8, ATmega328, ATmega1280), um **cristal oscilador** para realizar as funções do sistema em sincronia com por meio dos "clocks" além de suporte a uma linguagem de programação padrão, uma modificação baseada em C/C++ com bibliotecas e funções próprias.  
+As placas de prototipação possuem diversos componentes, como os **pinos** de entrada/saída Digitais e Analógicos, **portas** e interfaces (USB-B, micro-USB, Fonte de Tensão), **microcontroladores** Atmel (ATmega8, ATmega328, ATmega1280), um **cristal oscilador** para realizar as funções do sistema em sincronia com por meio dos "clocks" e suporte a uma **modificação das linguagens de programação C/C++** com bibliotecas e funções próprias.  
 Além das placas, a plataforma possui projetos opensource, bibliotecas, interfaces para sensores e softwares como o Arduino IDE para o desenvolvimento de programas para as placas de prototipagem.  
 
-O que torna o Arduino tão especial é sua acessibilidade, uma vez é possível realizar diversos projetos usando componentes, circuitos integrados e sensores amplamente aplicáveis rotineiramente a um baixo cursto em comparação com outras plataformas e tecnologias.  
-
-
-## Modelos
-
-Dentre os diversos modelos de placas, os mais conhecidos são:
-
-* Arduino Uno  
-* Arduino Uno R3  
-* Arduino Mega  
-* Arduino Leonardo  
-* Arduino Micro  
-* Arduino Nano  
-* Arduino Mini  
+O que torna o Arduino tão especial é sua acessibilidade, uma vez é possível realizar diversos projetos usando componentes, shields (placas que permitem adicionar funcionalidades às placas Arduino), circuitos integrados e sensores amplamente aplicáveis rotineiramente a um baixo cursto em comparação com outras plataformas e tecnologias.  
 
 
 ## Arquitetura
@@ -35,13 +22,11 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 
 </br>
 
-###### Arquitetura:  
+###### Pinagem e Arquitetura:  
 
 ![pinagem e entradas](./img/pinagem.png)  
 
 </br>
-
-###### Pinagem:  
 
 ![arduino pinout](./img/ARDUINO_V2.png)  
 
@@ -54,10 +39,22 @@ Dentre os diversos modelos de placas, os mais conhecidos são:
 </br>
 </div>
 
+## Modelos
+
+Dentre os diversos modelos de placas, os mais conhecidos são:
+
+* Arduino Uno  
+* Arduino Mega  
+* Arduino Leonardo  
+* Arduino Micro  
+* Arduino Nano  
+* Arduino Mini  
+
+
 ### Diferença entre Microcontrolador e Microprocessador
 
-* Microprocessador - conjunto de componentes [ unidades lógica, aritmética, unidade de controle, com diversos registradores de memória além das entradas e saídas ] que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema  
-* Microcontrolador - chip único que realiza todas as funções dos componentes do microprocessador [ chip All-in-One ] que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores  
+* Microprocessador - conjunto de componentes [ unidades lógica, aritmética, unidade de controle, com diversos registradores de memória além das entradas e saídas ] que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema.  
+* Microcontrolador - chip único que realiza todas as funções dos componentes do microprocessador [ chip All-in-One ] que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores.  
 
 Ambas as placas possuem chipset, processador com 1 ou mais núcleos, memórias RAM, memória ROM, EEPROM, memória Flash, unidades de armazenamento (dado o tamanho e as interfaces mais simples das placas, o mais comum é o MicroSD)...  
 
@@ -70,7 +67,7 @@ Comparando arquiteturas:
 
 </div>
 
-_Arduino Duemilanove (2009, em italiano), que possui um clock de 16MHz, 2kB de memória RAM, 32kB de memória flash, 14 portas digitais e 6 entradas analógicas._  
+_Arduino Duemilanove (2009, em italiano), que possui um controlador ATmega168, um clock de 16MHz, 2kB de memória RAM, 32kB de memória flash, 14 portas digitais e 6 entradas analógicas (20 pinos), opera em 3.3V ou 5V (entretanto podendo receber de 6 a 20 Volts) a 40mA ou 50mA._  
 _Raspberry Pi 1 Model B+, com um processador Broadcom de núcleo único e 700 MHz, 512 MB de memória RAM padrão DDR2, 40 pinos, quatro portas USB 2.0, saída HDMI, slot para microSD, baixo consumo de energia (entre 0,5 e 1 watt), interface de conexão Ethernet, interface para câmera e tela, além de saída de som P2._  
 
 ## Exemplos de Código:

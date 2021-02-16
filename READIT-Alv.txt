@@ -1,0 +1,90 @@
+
+# Sobre:
+
+As placas de prototipação Arduino possuem diversos componentes, como:
+ - pinos de entrada/saída Digitais e Analógicos
+ - portas e interfaces (USB-B, micro-USB, Fonte de Tensão)
+ - microcontroladores Atmel (ATmega8, ATmega328, ATmega1280)
+ - um cristal oscilador para realizar as funções do sistema em sincronia com por meio dos "clocks"
+ - e suporte a uma modificação das linguagens de programação C/C++ com bibliotecas e funções próprias.
+
+
+Além das placas, a plataforma possui projetos opensource, bibliotecas, interfaces para sensores e softwares como o Arduino IDE para o desenvolvimento de programas para as placas de prototipagem.
+
+
+O que torna o Arduino tão especial é sua acessibilidade, uma vez é possível realizar diversos projetos usando componentes, shields (placas que permitem adicionar funcionalidades às placas Arduino), circuitos integrados e sensores amplamente aplicáveis rotineiramente a um baixo cursto em comparação com outras plataformas e tecnologias.
+
+
+
+
+# Arquitetura:
+
+Fonte DC
+Conexão USB-B
+Cristal Oscilador - Fonte dos 'clocks'
+ATMEGA16U2 - Interface USB
+Botão de Reset
+Referência de Tensão para Input/Output do microcontrolador
+Pino de Reset
+Tensão 3.3V
+Tensão 5V
+Pinos Terra
+Input de Tensão
+Portas Analógicas (A0 a A5)
+Tensão de Referência para as entradas Analógicas
+Portas Digitais (0 a 13)
+ Portas Seriais Input/Output (RX/TX)
+ Portas PWM (Modulação por Largura de Pulso)
+ATMEGA328P - Unidade Lógica
+Portas para Programação Serial no Circuito (ATMEGA16U2 e ATMEGA328P)
+ Tensão 5V
+ Pinos Terra
+ Reset
+ Serial Clock
+ Hierarquia Master-Output-Slave-Input
+ Hierarquia Master-Input-Slave-Output
+
+
+
+
+# Modelos
+
+É evidente que a empresa responsável pela plataforma possui diversos modelos de placas, dos quais se destacam:
+
+	* Arduino Uno (o mais fácil de se encontrar no mercado e com recursos que atendem a maioria das necessidades do usuário, um dos poucos modelos que ainda utilizam uma EEPROM removível do soquete, embora já existam versões do Uno com microcontrolador SMD)
+
+	* Arduino Leonardo (número maior de pinos de que o Uno, microcontrolador SMD, USB nativo [diferente do Uno que utiliza USB via ATMega16U2] e um custo similar)
+
+	* Arduino Mega (se destaca pelo tamanho, maior memória flash, suas 4 portas seriais e quantidade de pinos disponíveis)
+
+	* Arduino Micro
+
+	* Arduino Nano
+
+	* Arduino Mini (para uso único e projetos pequenos, portas para soldagem)
+
+
+
+
+# Diferença entre Microcontrolador e Microprocessador
+
+* Microprocessador - conjunto de componentes que executam diversas tarefas/processos simultaneamente de programas diferentes, podendo adaptar uma tarefa de acordo com a situação do sistema.
+Os processadores mais conhecidos se baseam na arquitetura de Von Neumann que consistem em: unidades lógica, aritmética, unidade de controle, com diversos registradores de memória além das entradas e saídas
+
+* Microcontrolador - chip único que realiza todas as funções dos componentes do microprocessador [ chip All-in-One ] que executa apenas um processo pré-programado e, por isso, geralmente possui capacidade de armazenamento e processamento inferior aos microprocessadores
+
+Ambas as placas possuem chipset, processador com 1 ou mais núcleos, memórias RAM, memória ROM, EEPROM, memória Flash, unidades de armazenamento (dado o tamanho e as interfaces mais simples das placas, o mais comum é o MicroSD)...
+
+
+
+
+# Comparando arquiteturas:
+
+
+Enquanto o Arduino é projetado para executar em loop apenas uma mesma tarefa/programa assim que é conectado à energia - pois seu bootloader é mais simples - e apenas necessita de uma "tradução" do código fonte e uma interface para transferir o programa ao controlador, o Raspberry necessita de um bootloader capaz de iniciar um sistema operacional e seus diversos programas.
+Além disso o Arduino suporta tensões e correntes mais altas que o Raspberry pode suportar.
+
+Logo, para a automação de tarefas repetitivas, leituras simples de dados sensoriais e projetos com maior consumo elétrico o Arduino se mostra eficiente, mesmo não sendo recomendável para um produto final.
+Entretanto, para projetos que necessitam de adaptação a diversas condições, análise dos dados recebidos e interação constante com o usuário/desenvolvedor o Raspberry é a melhor opção.
+
+
