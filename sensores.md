@@ -27,14 +27,14 @@ Além disso, no arduíno há ainda outra conversão: O arduíno não trabalha co
 ### Sensor de umidade 
 O sensor de umidade é um importante sensor pois com ele podemos realizar projetos de automação embasados na umidade de algo, como a terra de um vaso por exemplo
 
-<img src="images-sensors/sensor-umidade.jpg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/sensor-umidade.jpg" alt="image" height="550px" width="700px">
 
 </br>
 
 #### Projeto regador automático
 um exemplo de projeto realizado com este sensor é um regador automático de plantas. Aqui, o sensor é usado junto com o arduíno para verificar a umidade da terra em que está uma planta. Se a umidade ficar muito baixa, regamos a planta automaticamente
 
-<img src="images-sensors/irrigador.jpg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/irrigador.jpg" alt="image" height="550px" width="700px">
 
 
 </br>
@@ -45,14 +45,14 @@ um exemplo de projeto realizado com este sensor é um regador automático de pla
 O sensor de distância é um dos sensores mais versáteis que temos no arduíno. Há uma quantidade enorme de projetos que podemos fazer usando-os.
 Os sensores mais comuns e baratos conseguem fazer detecções a até cerca de 1 metro de distância, mas há outros sensores muito mais potentes que podem ser usados
 
-<img src="images-sensors/sensor-distancia.jpeg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/sensor-distancia.jpeg" alt="image" height="550px" width="700px">
 
 #### Projeto carrinho que não se choca com as paredes
 Um ótimo exemplo do uso deste sensor é visto no projeto de um carrinho que não se choca contra as paredes. Para fazer isso, usamos o sensor de distância para prevenir o carrinho de se aproximar de mais, e consequente bater, na parede.
 
 </br>
 
-<img src="images-sensors/carro.jpg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/carro.jpg" alt="image" height="550px" width="700px">
 
 
 </br>
@@ -63,8 +63,8 @@ Um ótimo exemplo do uso deste sensor é visto no projeto de um carrinho que nã
 Um sensor de fluxo de água é muito importante e fornece diversas opções de projetos,</br>
  principalmente quando queremos interromper a passagem de um determinado liquido depois que passou um determinadoro volume do mesmo
 
-<!-- ![imagaem sensor](images-sensors/sensor-fluxo-agua.jpg) -->
-<img src="images-sensors/sensor-fluxo-agua.jpg" alt="image" height="550px" width="700px">
+<!-- ![imagaem sensor](./img/images-sensors/sensor-fluxo-agua.jpg) -->
+<img src="./img/images-sensors/sensor-fluxo-agua.jpg" alt="image" height="550px" width="700px">
 
 </br>
 
@@ -73,7 +73,7 @@ Um exemplo de projeto muito interessante e sustentável é um medidor de consumo
 seu consumo de água e definir metas de consumo, de modo que se esse valor for extrapolado, o usário seja notificado. Deste modo, </br>
 o usuário se conscientiza mais do seu uso abusivo e pode mitiga-lo.
 
-<img src="images-sensors/fluxo-de-agua.png" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/fluxo-de-agua.png" alt="image" height="550px" width="700px">
 
 
 </br>
@@ -83,13 +83,13 @@ o usuário se conscientiza mais do seu uso abusivo e pode mitiga-lo.
 ### Relé
 O relé é sem dúvida um dos componentes eletrônicos mais interessantes quando falamos de arduino. O relé é basicamente um interruptor eletrônico, ou seja, um interruptor que podemos acionar eletricamente e desse modo, com o arduino podemos controlar o relé, e o relé pode ser ligado a uma corrente muito mais alta, com 127V das casas e desse modo, podemos ligar aparelhos que demandam muito mais corente usando o arduino e o relé
 
-<img src="images-sensors/rele.jpg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/rele.jpg" alt="image" height="550px" width="700px">
 
 </br>
 
 #### Projeto ligando a casa com palmas
 Talvez um dos mais divertidos projetos que podem ser feitos com um relé é ligar os aparelhos eletronicos de uma casa batendo palmas ou emitindo utros sons, para isso, conectamos o relé a o aparelho desejado e usamos um sensor de ruído para verificar se houve um som de batida de palmas. Se sim, podemos fazer com que o relé se ative!
-<img src="images-sensors/rele-gif.gif" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/rele-gif.gif" alt="image" height="550px" width="700px">
 
 
 </br>
@@ -101,7 +101,7 @@ o sensor de gás é muito útil, pois com ele podemos verificar se há presença
 diversos ganhos, pois assim podemos dentre outras coisas, tornar um ambiente mais seguro, posto que muitos acidentes ocorrem
 quando o indivíduo não sente o cheiro do gás.
 
-<img src="images-sensors/sensor-gas.jpeg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/sensor-gas.jpeg" alt="image" height="550px" width="700px">
 
 </br>
 
@@ -109,7 +109,7 @@ quando o indivíduo não sente o cheiro do gás.
 Um projeto nessa linha é o de construir um interruptor com o sensor de gás, de modo que, quando seja detectado um vazamento de gás,
 os interruptores da casa sejam desabilitados usando um relé, prevenindo o usuário de tentar acendê-los sem querer e ocasionar um acidente
 
-<img src="images-sensors/interruptor.png" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/interruptor.png" alt="image" height="550px" width="700px">
 
 
 </br>
@@ -120,12 +120,12 @@ os interruptores da casa sejam desabilitados usando um relé, prevenindo o usuá
 O motor de passos é por certo um dos componentes mais interessantes quando falamos de arduíno e afins. </br>
 Um motor de passos é um motor que podemos ajustar o ângulo de rotação com uma precisão imensa, isso nos possibilita quase que infinitas aplicações, principalmente quando vamos fazer algo que exige grande precisão, como construir uma impressora 3D ou meso uma cortadora a laser.
 
-<img src="images-sensors/motor-de-passos.jpg" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/motor-de-passos.jpg" alt="image" height="550px" width="700px">
 
 </br>
 
 #### Projeto robô desenhista
 Talvez um dos projetos mais divertidos com esse componente seja um robô desenhista, ou seja, um robô capaz de fazer desenhos em uma superfície usando uma caneta
 
-<img src="images-sensors/robo-desenhista.gif" alt="image" height="550px" width="700px">
+<img src="./img/images-sensors/robo-desenhista.gif" alt="image" height="550px" width="700px">
 
